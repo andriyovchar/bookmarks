@@ -11,5 +11,9 @@ export class GroupService {
     async findAll(): Promise<Group[]> {
         return await this.repo.find();
     }
+
+    async findOne(id): Promise<Group> {
+        return await this.repo.findOne(id);
+    }
     
 }
