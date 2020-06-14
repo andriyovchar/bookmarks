@@ -22,8 +22,10 @@ export class GetGroupsSuccess implements Action {
 
 export class GetGroup implements Action {
   public readonly type = EGroupActions.GetGroup;
+  public group: IGroup;
 
-  constructor(public payload: number) {
+  constructor(public payload: IGroup) {
+    this.group = payload;
   }
 }
 

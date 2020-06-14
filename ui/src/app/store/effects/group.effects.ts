@@ -23,10 +23,8 @@ export class GroupEffects {
     ofType<GetGroup>(EGroupActions.GetGroup),
     map(action => action.payload),
     withLatestFrom(this._store.pipe(select(selectGroupList))),
-    switchMap(([id, groups]) => {
-      const selectedGroup = groups.filter(group => group.id === +id)[0];
-      return of(new GetGroupSuccess(selectedGroup));
-    })
+    switchMap(([id, groups]) => this._groupService.getGroup(id)),
+    switchMap((groupHttp) => of(new GetGroupSuccess(groupHttp)))
   );
 
   @Effect()
