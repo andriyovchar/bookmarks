@@ -1,0 +1,14 @@
+export const groups = [
+    {
+        "id": 1,
+        "name": "work"
+    },
+    {
+        "id": 2,
+        "name": "leisure"
+    },
+    {
+        "id": 3,
+        "name": "personal"
+    }
+];

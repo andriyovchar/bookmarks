@@ -1,0 +1,15 @@
+<div class="wrapper">
+
+  <div>
+    <h3>{{ (config$ | async)?.adminName }}</h3>
+    <p>
+      <a routerLink="/groups"
+         routerLinkActive="active">Groups</a>
+    </p>
+  </div>
+
+  <div class="container app-container">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
