@@ -10,7 +10,7 @@ See api\.env
 Run `npm run start:dev` to start API
 
 ## Init DB migration
-Run `npm run typeorm:migration:generate -- InitDB` to start API
+Run `npm run typeorm:migration:generate -- InitDB` to initialize DB migration
                                                                  
 ## Run DB migration
 Run `npm run typeorm:migration:run` to start API (you need PostgreSQL to be installed)
