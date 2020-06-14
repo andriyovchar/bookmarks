@@ -1,5 +1,8 @@
 # bookmarks - Andrii Ovchar
 
+Watch video of the working solution
+https://youtu.be/X39v6VXQ27o
+
 ## Development server - UI
 Run `ng s` for a dev server. Navigate to `http://localhost:4200/`
 
